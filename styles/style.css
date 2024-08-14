@@ -1,0 +1,97 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-primary: #0A3871;
+    --color-secondary: #F3F5FC;
+    --color-terceary: #FFFFFF;
+    --color-hover:#272727;
+
+    --font--title: "Krona One", sans-serif;
+    --font--paragraph: "Montserrat", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-secondary);
+    color: var(--color-secondary);
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    padding: 40px 40px 40px 40px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.main__left {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main__left__logo {
+    border: 2px solid var(--color-primary);
+    height: 48px;
+    width: 120px;
+}
+
+.main__left__textarea{
+    height: 100%;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-secondary); 
+}
+
+::placeholder {
+    color: var(--color-primary);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.main__left__button{
+    width: 100%;
+    border: 2px solid var(--color-primary);
+}
+
+.main__right {
+    height: 90vh;
+    width: 400px;
+    border-radius: 32px;
+    background-color: var(--color-terceary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__right__image {
+    height: 304px;
+    width: 336px;
+    align-self: center;
+}
+
+.main__right__message {
+   display: flex;
+   flex-direction: column;
+}
+
+h1 {
+    color: #343A40;
+    align-self: center;
+    text-align: center;
+}
+
+p {
+    color: #495057;
+    align-self: center;
+    text-align: center;
+}
