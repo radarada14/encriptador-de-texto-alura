@@ -92,12 +92,32 @@ function copyOutput() {
     }
 }
 
+// Function to enable/disable buttons based on textarea content
+function updateButtonState() {
+    const inputText = document.getElementById('inputText').value.trim();
+    const encryptButton = document.getElementById('encryptButton');
+    const decryptButton = document.getElementById('decryptButton');
+
+    if (inputText.length > 0) {
+        encryptButton.disabled = false;
+        decryptButton.disabled = false;
+        encryptButton.style.backgroundColor = '#0A3871';
+        decryptButton.style.backgroundColor = 'transparent';
+    } else {
+        encryptButton.disabled = true;
+        decryptButton.disabled = true;
+        encryptButton.style.backgroundColor = '#356EA9';
+        decryptButton.style.backgroundColor = '#D8DFE8';
+    }
+}
+
 // Event listener to clean input in real-time
 document.addEventListener('DOMContentLoaded', function() {
     const inputTextArea = document.getElementById('inputText');
     const warningMessage = document.getElementById('warningMessage');
 
     inputTextArea.addEventListener('input', function(event) {
+        updateButtonState();
         const originalText = event.target.value;
         const cleanedText = cleanInput(originalText);
 

@@ -6,11 +6,14 @@
 }
 
 :root {
+
     --color-primary: #0A3871;
     --color-secondary: #F3F5FC;
     --color-terceary: #FFFFFF;
     --color-4th: #D8DFE8;
     --color-5th: #0A3871;
+    --color-6th: #072B61;
+    --color-7th: #356EA9;
     --color-hover:#272727;
 
     --font--title: "Krona One", sans-serif;
@@ -114,6 +117,14 @@ body {
     font-size: 1rem;
     font-weight: 400;
     border: none;
+    transition: background-color 0.3s, color 0.3s; 
+    transition: color 0.3s, color 0.3s; 
+}
+
+.main__left__buttons__encrip:not(:disabled):hover {
+    cursor: pointer;
+    color: var(--color-7th); /* Change text color on hover */
+    border: 2px solid var(--color-7th); /* Change border color on hover */
 }
 
 .main__left__buttons__decrip {
@@ -129,6 +140,14 @@ body {
     font-size: 1rem;
     font-weight: 400;
     border: 2px solid var(--color-5th);
+    transition: background-color 0.3s, color 0.3s; 
+    transition: color 0.3s, color 0.3s; 
+}
+
+.main__left__buttons__decrip:not(:disabled):hover {
+    cursor: pointer;
+    color: var(--color-7th); /* Change text color on hover */
+    border-color: var(--color-7th); /* Change border color on hover */
 }
 
 .main__right {
@@ -197,6 +216,13 @@ body {
     font-size: 1rem;
     font-weight: 400;
     border: 2px solid var(--color-5th);
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.main__right__copy:hover {
+    cursor: pointer;
+    color: var(--color-7th); /* Change text color on hover */
+    border: 2px solid var(--color-7th); /* Change border color on hover */
 }
 
 @media (max-width: 881px) {
