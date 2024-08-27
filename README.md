@@ -36,5 +36,5 @@ Por fin, en la columna Concluido estarán los elementos ya concluidos.
 El Trello es una herramienta de uso individual para que puedas controlar el progreso de tus actividades, pero no será evaluada.
 
 # Visualizacion
-https://github.com/radarada14/encriptador-de-texto-alura/deployments/Production
+https://encriptador-de-texto-alura-g408pvygm-radaradas-projects.vercel.app
 
